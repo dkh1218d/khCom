@@ -1,0 +1,2 @@
+rootProject.name = "khCom"
+include ':app'

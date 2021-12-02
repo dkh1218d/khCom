@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/mainColor"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/signup_header"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="회원가입"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/id_lo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signup_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    style="@style/AuthJoinText"
+                    android:hint="Email"
+                    android:maxLength="35" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#999999" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pwd_lo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signup_pwd"
+                    style="@style/AuthJoinText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:maxLength="20"
+                    android:hint="Password"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/signup_pwdchk"
+                style="@style/AuthEditText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Password Check"
+                android:inputType="textPassword"
+
+                android:maxLength="20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#999999" />
+
+            <CheckBox
+                android:id="@+id/signup_approve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:id="@+id/signup_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_radius"
+                android:text="다음 단계로" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
